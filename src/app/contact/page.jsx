@@ -1,8 +1,15 @@
+import Link from 'next/link'
 import React from 'react'
+
 
 const ContactPage = () => {
   return (
-    <div>ContactPage</div>
+      <div>ContactPage
+          
+          <Link href="/about">
+              Go to about
+          </Link>
+    </div>
   )
 }
 
