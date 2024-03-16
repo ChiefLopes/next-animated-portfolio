@@ -9,14 +9,28 @@ const TransitionProvider = ({ children }) => {
   const pathName = usePathname();
 
   return (
-    <AnimatePresence>
-      <div className="w-screen h-screen bg-gradient-to-b from-green-100 to-red-200">
+    <AnimatePresence mode="wait">
+      <div
+        key={pathName}
+        className="w-screen h-screen bg-gradient-to-b from-green-100 to-red-200"
+      >
         <motion.div
-          key={pathName}
           className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40"
           animate={{ height: "0vh" }}
-          exit={{ height: "100vh" }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          exit={{ height: "140vh" }}
+          transition={{ duration: 2, ease: "easeOut" }}
+        />
+        <motion.div
+          className="fixed m-auto top-0 bottom-0 left-0 right-0 text-white text-8xl cursor-default bg-red-500"
+          animate={{ height: "0vh" }}
+          exit={{ height: "140vh" }}
+          transition={{ duration: 2, ease: "easeOut" }}
+        ></motion.div>
+
+        <motion.div
+          className="h-screen w-screen fixed bg-red-500 rounded-t-[100px] bottom-0 z-30"
+          initial={{ height: "140vh" }}
+          animate={{ height: "0vh", transition: { delay: 2 } }}
         />
         <div className="h-24">
           <Navbar />
