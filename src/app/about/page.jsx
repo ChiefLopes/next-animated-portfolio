@@ -11,7 +11,7 @@ const Aboutpage = () => {
       transition={{ duration: 1 }}
     >
       {/* CONTAINER */}
-      <div>
+      <div className="h-full overflow-scroll">
         {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-14 lg:p-20 xl:p-28 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64">
           {/* BIOGRAPHY CONTAINER */}
@@ -85,9 +85,81 @@ const Aboutpage = () => {
             <h1 className="font-bold text-2xl">SKILLS</h1>
 
             {/* SKILL LIST */}
-            <div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+            <div className="flex gap-4 flex-wrap">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 JavaScript
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                TypeScript
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                React.js
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Next.js
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                SCSS
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Tailwind CSS
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                MongoDB
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                PostgreSQL
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Node.js
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Nest.js
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Express.js
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Spring Boot
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                GraphQL
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Apollo
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Redux
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Framer Motion
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Three.js
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                WebGL
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Webpack
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Vite
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Docker
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                AWS
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Firebase
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Git
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Figma
               </div>
             </div>
 
@@ -121,7 +193,103 @@ const Aboutpage = () => {
           </div>
 
           {/* EXPERIENCE CONTAINER */}
-          <div>EXPERIENCE</div>
+          <div className="flex flex-col gap-12 justify-center pb-48">
+            {/* EXPERIENCE TITLE */}
+            <h1 className="font-bold text-2xl">EXPERIENCE</h1>
+            {/* EXPERIENCE LIST */}
+            <div>
+              {/* EXPERIENCE LIST ITEM */}
+              <div className="flex justify-between h-48  ">
+                {/* LEFT */}
+                <div className="w-1/3 ">
+                  {/* JOB TITLE */}
+                  <div className="bg-blue-300 p-3 font-semibold rounded-b-lg rounded-s-lg ">
+                    Senior Javascript Engineer
+                  </div>
+                  {/* JOB DESC. */}
+                  <div className="p-3 text-sm italic">
+                    My Current employment was better than my job before.
+                  </div>
+                  {/* JOB DATE. */}
+                  <div className="p-3 text-red-400 text-sm font-semibold ">
+                    2024-present
+                  </div>
+                  {/* JOB COMPANY. */}
+                  <div className="p-3 rounded bg-white text-sm font-semibold">Apple</div>
+                </div>
+
+                {/* CENTER */}
+                <div className="w-1/6 bg-red-600">
+                  {/* LINE */}
+                  <div>
+                    {/* CIRCLE */}
+                    <div></div>
+                  </div>
+                </div>
+
+                {/* RIGHT */}
+                <div className="w-1/3 "></div>
+              </div>
+
+              {/* EXPERIENCE LIST ITEM */}
+              <div>
+                {/* LEFT */}
+                <div></div>
+
+                {/* CENTER */}
+                <div>
+                  {/* LINE */}
+                  <div>
+                    {/* CIRCLE */}
+                    <div></div>
+                  </div>
+                </div>
+
+                {/* RIGHT */}
+                <div>
+                  {/* JOB TITLE */}
+                  <div>Senior Javascript Engineer</div>
+                  {/* JOB DESC. */}
+                  <div>
+                    My Current employment was better than my job before.
+                  </div>
+                  {/* JOB DATE. */}
+                  <div>2024-present</div>
+                  {/* JOB COMPANY. */}
+                  <div>Apple</div>
+                </div>
+              </div>
+
+              {/* EXPERIENCE LIST ITEM */}
+              <div>
+                {/* LEFT */}
+                <div>
+                  {/* JOB TITLE */}
+                  <div>Senior Javascript Engineer</div>
+                  {/* JOB DESC. */}
+                  <div>
+                    My Current employment was better than my job before.
+                  </div>
+                  {/* JOB DATE. */}
+                  <div>2024-present</div>
+                  {/* JOB COMPANY. */}
+                  <div>Apple</div>
+                </div>
+
+                {/* CENTER */}
+                <div>
+                  {/* LINE */}
+                  <div>
+                    {/* CIRCLE */}
+                    <div></div>
+                  </div>
+                </div>
+
+                {/* RIGHT */}
+                <div></div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* SVG CONTAINER */}
