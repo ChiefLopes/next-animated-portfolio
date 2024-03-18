@@ -215,78 +215,87 @@ const Aboutpage = () => {
                     2024-present
                   </div>
                   {/* JOB COMPANY. */}
-                  <div className="p-3 rounded bg-white text-sm font-semibold">Apple</div>
+                  <div className="p-3 py-2 rounded bg-white text-sm font-semibold w-fit h-9 ">
+                    Apple
+                  </div>
                 </div>
 
                 {/* CENTER */}
-                <div className="w-1/6 bg-red-600">
+                <div className="w-1/6">
                   {/* LINE */}
-                  <div>
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* CIRCLE */}
-                    <div></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-500 bg-white -left-2"></div>
                   </div>
                 </div>
 
                 {/* RIGHT */}
                 <div className="w-1/3 "></div>
               </div>
-
-              {/* EXPERIENCE LIST ITEM */}
-              <div>
+              <div className="flex justify-between h-48  ">
                 {/* LEFT */}
-                <div></div>
+                <div className="w-1/3 ">{/* JOB TITLE */}</div>
 
                 {/* CENTER */}
-                <div>
+                <div className="w-1/6">
                   {/* LINE */}
-                  <div>
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* CIRCLE */}
-                    <div></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-500 bg-white -left-2"></div>
                   </div>
                 </div>
 
                 {/* RIGHT */}
-                <div>
-                  {/* JOB TITLE */}
-                  <div>Senior Javascript Engineer</div>
+                <div className="w-1/3 ">
+                  <div className="bg-blue-300 p-3 font-semibold rounded-b-lg rounded-s-lg ">
+                    Senior Javascript Engineer
+                  </div>
                   {/* JOB DESC. */}
-                  <div>
+                  <div className="p-3 text-sm italic">
                     My Current employment was better than my job before.
                   </div>
                   {/* JOB DATE. */}
-                  <div>2024-present</div>
+                  <div className="p-3 text-red-400 text-sm font-semibold ">
+                    2024-present
+                  </div>
                   {/* JOB COMPANY. */}
-                  <div>Apple</div>
+                  <div className="p-3 py-2 rounded bg-white text-sm font-semibold w-fit h-9 ">
+                    Apple
+                  </div>
                 </div>
               </div>
-
-              {/* EXPERIENCE LIST ITEM */}
-              <div>
+              <div className="flex justify-between h-48  ">
                 {/* LEFT */}
-                <div>
+                <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div>Senior Javascript Engineer</div>
+                  <div className="bg-blue-300 p-3 font-semibold rounded-b-lg rounded-s-lg ">
+                    Senior Javascript Engineer
+                  </div>
                   {/* JOB DESC. */}
-                  <div>
+                  <div className="p-3 text-sm italic">
                     My Current employment was better than my job before.
                   </div>
                   {/* JOB DATE. */}
-                  <div>2024-present</div>
+                  <div className="p-3 text-red-400 text-sm font-semibold ">
+                    2024-present
+                  </div>
                   {/* JOB COMPANY. */}
-                  <div>Apple</div>
+                  <div className="p-3 py-2 rounded bg-white text-sm font-semibold w-fit h-9 ">
+                    Apple
+                  </div>
                 </div>
 
                 {/* CENTER */}
-                <div>
+                <div className="w-1/6">
                   {/* LINE */}
-                  <div>
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* CIRCLE */}
-                    <div></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-500 bg-white -left-2"></div>
                   </div>
                 </div>
 
                 {/* RIGHT */}
-                <div></div>
+                <div className="w-1/3 "></div>
               </div>
             </div>
           </div>
