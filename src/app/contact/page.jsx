@@ -1,12 +1,41 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
   const text = "Say Hello";
   const [success, setSuccess] = useState(true);
   const [error, setError] = useState(false);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    setError(false)
+    setSuccess(false)
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          setSuccess(true)
+          form.current.reset()
+        },
+        (error) => {
+         setError(true)
+        }
+      );
+  };
 
   return (
     <motion.div
@@ -38,17 +67,23 @@ const ContactPage = () => {
         </div>
 
         {/* FORM CONTAINER */}
-        <form className="h-1/2 lg:h-full lg:w-1/2 flex flex-col bg-red-50 rounded-xl text-xl gap-8 justify-center p-24">
+        <form
+          onSubmit={sendEmail}
+          ref={form}
+          className="h-1/2 lg:h-full lg:w-1/2 flex flex-col bg-red-50 rounded-xl text-xl gap-8 justify-center p-24"
+        >
           <span>Hello, Lopes</span>
           <textarea
             className="bg-transparent border-b-2 outline-none border-b-black resize-none"
             rows={6}
+            name="user_message"
           />
           <span>My Email address is: </span>
 
           <input
             type="text"
             className="bg-transparent border-b-2 outline-none border-b-black"
+            name="user_email"
           />
 
           <span className="text-gray-500">Regards...</span>
